@@ -113,15 +113,14 @@ function createTopic($request_values)
 	* * * * * * * * * * * * * * * * * * * * * */
 	function editTopic($role_id)
 	{
-		global $conn, $title, $post_slug, $body, $published, $isEditingPost, $post_id;
-		$sql = "SELECT * FROM posts WHERE id=$role_id LIMIT 1";
+		global $conn, $topic_name, $topic_slug, $topic_id;
+		$sql = "SELECT * FROM topic WHERE id=$role_id LIMIT 1";
 		$result = mysqli_query($conn, $sql);
-		$post = mysqli_fetch_assoc($result);
+		$topic = mysqli_fetch_assoc($result);
 		// set form values on the form to be updated
-		$title = $post['title'];
-		$body = $post['body'];
-        $published = $post['published'];
-        // return $post;//////////////////////////////////////////////////////////////////////////
+		$topic = $topic['topic_name'];
+		
+        return $topic;//////////////////////////////////////////////////////////////////////////
 	}
 
 	function updateTopic($request_values)
