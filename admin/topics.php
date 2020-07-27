@@ -24,6 +24,7 @@
 				<?php include(ROOT_PATH . '/includes/errors.php') ?>
 				<!-- if editing topic, the id is required to identify that topic -->
 				<?php if ($isEditingTopic === true): ?>
+					
 					<input type="hidden" name="topic_id" value="<?php echo $topic_id; ?>">
 				<?php endif ?>
 				<input type="text" name="topic_name" value="<?php echo $topic_name; ?>" placeholder="Topic">
@@ -59,6 +60,7 @@
 								<a class="fa fa-pencil btn edit"
 									href="topics.php?edit-topic=<?php echo $topic['id'] ?>">
 								</a>
+								
 							</td>
 							<td>
 								<a class="fa fa-trash btn delete"								

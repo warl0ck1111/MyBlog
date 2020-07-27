@@ -85,6 +85,23 @@ th { text-align: center;}
 	background-color: #0E7D92;
 	color: white;
 }
+
+/* FOOTER */
+.footer {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	color: rgb(0, 0, 0);
+	background-color: #565361;
+	text-align: center;
+	width: 100%;
+	margin: 20px auto 0px;
+	padding: 20px 0px;
+  }
+  
+
+
 /* * * * * * * * * *
 * PAGE CONTENT
 * * * * * * * * * */
